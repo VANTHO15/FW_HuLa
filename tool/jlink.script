@@ -1,4 +1,0 @@
-loadfile E:/FW_HuLa/tool/../output/Gpio/Gpio_TS_001/gcc/compile/Gpio_TS_001.hex 0x0
-r
-g
-exit

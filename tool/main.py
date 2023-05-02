@@ -19,6 +19,7 @@ from compile import Compile
 from debug import Debug
 from report import Report
 from run import Run
+from clean import Clean
 
 from common import Make_Dir
 
@@ -69,6 +70,8 @@ class mRunTool():
             Report(mTest=self.Mytest).Run()
         elif self.Step == "run":
             Run(mTest=self.Mytest).Run()
+        elif self.Step == "clean":
+            Clean(mTest=self.Mytest).Run()
         
 
 if __name__ == '__main__':

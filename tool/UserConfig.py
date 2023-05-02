@@ -21,7 +21,6 @@ JLINK_SERIAL_NUMBER = "59768862"  # If JLINK_INTERFACE = USB
 JLINK_IP = "192.168.1.6" # If JLINK_INTERFACE = IP
 DEVICE = "STM32F407VG"
 DEBUGER_JTAG_SWD = "JTAG"
-JLINK_LIBRARY = 'C:/Tool/Jlink/JLink/JLink_x64.dll'
 JLINK_FILE = 'C:/Tool/Jlink/JLink/JLink.exe'
 PYTHON_DIR = 'C:/Python310'
 #======================================= End User Config ==============================
