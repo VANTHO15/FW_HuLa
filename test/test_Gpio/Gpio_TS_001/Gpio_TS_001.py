@@ -16,6 +16,7 @@ for TC in LIST_TC_OF_TS:
     INCLUDE_DIRS.append(f'{TEST_DIR}/{TEST_NAME}/{TC}/include')
 
 XDM_FILES = [
-    f'{TEST_DIR}/{TEST_NAME}/Config_Xdm/Port.xdm',
-    f'{TEST_DIR}/{TEST_NAME}/Config_Xdm/Resource.xdm'
+    f'{TEST_DIR}/{TEST_NAME}/config/Gpio.xdm',
+    f'{TEST_DIR}/{TEST_NAME}/config/EcuC.xdm',
+    f'{TEST_DIR}/{TEST_NAME}/config/Resource.xdm'
 ]

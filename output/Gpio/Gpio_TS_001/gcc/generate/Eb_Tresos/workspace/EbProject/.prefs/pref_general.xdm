@@ -8,18 +8,21 @@
   <d:ctr name="General">
     <a:a name="DEF" value="XPath:/PreferencesSchema/General"/>
     <d:var name="Version" value="28.0.0"/>
-    <d:var name="ReleaseVersion" value="*"/>
+    <d:var name="ReleaseVersion" value="*">
+      <a:a name="IMPORTER_INFO" value="@DEF"/>
+    </d:var>
     <d:var name="ModelExtenderCompatibility" value="TRUE"/>
     <d:lst name="ModelExtender" type="MAP">
       <d:ctr name="ModelEcuConfiguration"/>
       <d:ctr name="SystemModel2"/>
     </d:lst>
-    <d:var name="System" value=""/>
-    <d:var name="EcuInstance" value=""/>
+    <d:var name="System" value="">
+      <a:a name="IMPORTER_INFO" value="@DEF"/>
+    </d:var>
+    <d:var name="EcuInstance" value="">
+      <a:a name="IMPORTER_INFO" value="@DEF"/>
+    </d:var>
     <d:lst name="ModuleConfigurations" type="MAP">
-
-<!-- BEGIN MODULE  -->
-
       <d:ctr name="EcuC">
         <d:var name="ModuleId" value="EcuC_HuLa"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -38,7 +41,6 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
-
       <d:ctr name="Gpio">
         <d:var name="ModuleId" value="Gpio_HuLa"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -57,7 +59,6 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
-
       <d:ctr name="Resource">
         <d:var name="ModuleId" value="Resource_HuLa"/>
         <d:var name="Enabled" value="TRUE"/>
@@ -76,9 +77,6 @@
           <a:a name="IMPORTER_INFO" value="@DEF"/>
         </d:var>
       </d:ctr>
-
-<!-- END MODULE  -->
-
     </d:lst>
     <d:lst name="AutoconfigureTriggers" type="MAP"/>
     <d:lst name="WizardConfigurations" type="MAP"/>

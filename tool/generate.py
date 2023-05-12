@@ -41,7 +41,7 @@ class Generate(CommonStep):
             head, XdmFileName = os.path.split(XdmFile) 
             # Copy xdm file bỏ vào EbProject
             XdmTemplateFile = os.path.normpath(XdmFile)
-            Xdm_File = os.path.normpath(os.path.join(self.Output, "EbProject", "Config_Xdm", XdmFileName))
+            Xdm_File = os.path.normpath(os.path.join(self.Output, "EbProject", "config", XdmFileName))
             with open(XdmTemplateFile,"r") as file:
                 Data = file.read()
             with open(Xdm_File, "w+") as file:

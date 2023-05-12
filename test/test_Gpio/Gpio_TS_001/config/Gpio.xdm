@@ -13,13 +13,42 @@
          xmlns:mt="http://www.tresos.de/_projects/DataModel2/11/multitest.xsd"  
          xmlns:variant="http://www.tresos.de/_projects/DataModel2/11/variant.xsd">
     <d:lst type="TOP-LEVEL-PACKAGES">
-      <d:ctr name="Port" type="AR-PACKAGE">
+      <d:ctr name="Gpio" type="AR-PACKAGE">
         <d:lst type="ELEMENTS">
-          <d:chc name="Port" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
+          <d:chc name="Gpio" type="AR-ELEMENT" value="MODULE-CONFIGURATION">
             <d:ctr type="MODULE-CONFIGURATION">
-              <a:a name="DEF" value="ASPath:/HuLa/Port"/>
+              <a:a name="DEF" value="ASPath:/HuLa/Gpio"/>
+              <d:var name="POST_BUILD_VARIANT_USED" type="BOOLEAN" value="true">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
+              <d:var name="IMPLEMENTATION_CONFIG_VARIANT" type="ENUMERATION" 
+                     value="VariantPostBuild">
+                <a:a name="IMPORTER_INFO" value="@DEF"/>
+              </d:var>
               <d:ctr name="PortGeneral" type="IDENTIFIABLE">
-                <d:var name="TestEnable" type="BOOLEAN" value="true"/>
+                <d:var name="TestEnable" type="BOOLEAN" value="true">
+                  <a:a name="VARIANTS" type="Variant">
+                    <variant:pbvcond>
+                      <variant:criterion 
+                                         value="ASPath:/EB/PostBuildSelectable/Criterions/my"/>
+                      <variant:cond>
+                        <variant:tst expr="1"/>
+                      </variant:cond>
+                    </variant:pbvcond>
+                  </a:a>
+                </d:var>
+                <d:var name="TestEnable" type="BOOLEAN" value="false">
+                  <a:a name="IMPORTER_INFO" value="@DEF"/>
+                  <a:a name="VARIANTS" type="Variant">
+                    <variant:pbvcond>
+                      <variant:criterion 
+                                         value="ASPath:/EB/PostBuildSelectable/Criterions/my"/>
+                      <variant:cond>
+                        <variant:tst expr="0"/>
+                      </variant:cond>
+                    </variant:pbvcond>
+                  </a:a>
+                </d:var>
               </d:ctr>
               <d:ctr name="CommonPublishedInformation" type="IDENTIFIABLE">
                 <d:var name="ArReleaseMajorVersion" type="INTEGER" value="4">

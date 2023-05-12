@@ -12,7 +12,7 @@ B2:
 B3:
 + chạy các cmdline sau:
 
-python main.py eb     : mở eb tresos lên, config và lấy config bỏ vào folder FW_HuLa\test\test_Gpio\Gpio_TS_001\Config_Xdm
+python main.py eb     : mở eb tresos lên, config và lấy config bỏ vào folder FW_HuLa\test\test_Gpio\Gpio_TS_001\config
 python main.py clean   : clean output 
 python main.py generate  : generate eb tresos
 python main.py compile  : compile code 
