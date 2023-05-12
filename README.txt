@@ -7,6 +7,7 @@ B1:
 + Vào UserConfig.py và config lai đường dẫn theo máy tính của mình 
 + pref_general.xdm chỉnh sửa lại version eb  : mặc định là 28.0
 + pref_general.xdm sử dụng module nào thì thêm module đó vào
++ Nếu generate mutil variant thì copy file systemmod/PostBuildVariantsSelectable.arxml ở eb tresos vào folder test/EbProject/systemmod
 B2:
 + Vào cmd ở hàm main.py 
 B3:
