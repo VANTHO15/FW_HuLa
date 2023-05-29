@@ -1,8 +1,5 @@
 ENTRY(Reset_Handler)
 
-/* Highest address of the user mode stack */
-_estack = ORIGIN(SRAM) + LENGTH(SRAM); /* end of "SRAM" Ram type memory */
-
 MEMORY
 {
   FLASH(rx):ORIGIN =0x08000000,LENGTH =1024K
@@ -23,9 +20,8 @@ SECTIONS
 	. = ALIGN(4);
 	_etext = .;
   }> FLASH
-
-  /* Used by the startup to initialize data */
-  _sidata = LOADADDR(.data);
+  
+  _la_data = LOADADDR(.data);
   
   .data :
   {

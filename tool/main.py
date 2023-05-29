@@ -48,6 +48,7 @@ class mTest(): # chứa các biến đầu vào input
     # get source files
     for SRC in SRC_DIRS:
         SRC_FILES += glob.glob(os.path.join(SRC,"*.c"))
+        SRC_FILES += glob.glob(os.path.join(SRC,"*.s"))
 
 class mRunTool():
     def __init__(self, step):

@@ -1,0 +1,438 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+                              c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (exit)
+c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                              c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+                              c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (__libc_init_array)
+c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+                              c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o (memset)
+c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+                              c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o) (_exit)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00100000         xr
+SRAM             0x20000000         0x00020000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+LOAD E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+START GROUP
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp\libgcc.a
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a
+END GROUP
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+LOAD c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x20020000                _estack = (ORIGIN (SRAM) + LENGTH (SRAM))
+
+.text           0x08000000      0xe08
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x1a8 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+                0x08000000                g_pfnVectors
+ *(.text)
+ .text          0x080001a8        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+ .text          0x080001a8       0x40 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .text          0x080001e8       0x7c c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+                0x080001e8                _stack_init
+                0x080001f0                _start
+                0x080001f0                _mainCRTStartup
+ .text          0x08000264      0x814 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+                0x08000264                GPIO_PeriClockControl
+                0x0800036c                GPIO_Init
+                0x080006a4                GPIO_DeInit
+                0x08000810                GPIO_ReadFromInputPin
+                0x0800083a                GPIO_ReadFromInputPort
+                0x08000854                GPIO_WriteToOutputPin
+                0x0800089c                GPIO_WriteToOutputPort
+                0x080008b8                GPIO_ToggleOutputPin
+                0x080008e0                GPIO_IRQInterruptConfig
+                0x080009e8                GPIO_IRQPriorityConfig
+                0x08000a3a                GPIO_IRQHandling
+ .text          0x08000a78       0x14 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+ .text          0x08000a8c       0xc4 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+                0x08000a8c                RESULT_RunAllTests
+                0x08000af8                ThoNVEnd
+                0x08000b0c                RESULT_Assert
+                0x08000b3c                main
+ .text          0x08000b50      0x174 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+                0x08000b50                delay
+                0x08000b7c                Gpio_TC_001
+ .text          0x08000cc4        0xe E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+                0x08000cc4                Gpio_TC_002
+ .text          0x08000cd2        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .text          0x08000cd2        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .text          0x08000cd2        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ .text          0x08000cd2        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ *(.text.*)
+ *fill*         0x08000cd2        0x2 
+ .text.Reset_Handler
+                0x08000cd4       0x48 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+                0x08000cd4                Reset_Handler
+ .text.Default_Handler
+                0x08000d1c        0x2 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+                0x08000d1c                RTC_Alarm_IRQHandler
+                0x08000d1c                HASH_RNG_IRQHandler
+                0x08000d1c                EXTI2_IRQHandler
+                0x08000d1c                TIM8_CC_IRQHandler
+                0x08000d1c                DebugMon_Handler
+                0x08000d1c                TIM1_CC_IRQHandler
+                0x08000d1c                DMA2_Stream5_IRQHandler
+                0x08000d1c                HardFault_Handler
+                0x08000d1c                DMA1_Stream5_IRQHandler
+                0x08000d1c                SysTick_Handler
+                0x08000d1c                PVD_IRQHandler
+                0x08000d1c                SDIO_IRQHandler
+                0x08000d1c                TAMP_STAMP_IRQHandler
+                0x08000d1c                PendSV_Handler
+                0x08000d1c                NMI_Handler
+                0x08000d1c                CAN2_RX1_IRQHandler
+                0x08000d1c                EXTI3_IRQHandler
+                0x08000d1c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x08000d1c                TIM1_UP_TIM10_IRQHandler
+                0x08000d1c                TIM8_UP_TIM13_IRQHandler
+                0x08000d1c                I2C3_ER_IRQHandler
+                0x08000d1c                LCD_TFT_IRQHandler
+                0x08000d1c                EXTI0_IRQHandler
+                0x08000d1c                I2C2_EV_IRQHandler
+                0x08000d1c                DMA1_Stream2_IRQHandler
+                0x08000d1c                CAN1_RX0_IRQHandler
+                0x08000d1c                FPU_IRQHandler
+                0x08000d1c                OTG_HS_WKUP_IRQHandler
+                0x08000d1c                UsageFault_Handler
+                0x08000d1c                CAN2_SCE_IRQHandler
+                0x08000d1c                DMA2_Stream2_IRQHandler
+                0x08000d1c                SPI1_IRQHandler
+                0x08000d1c                TIM6_DAC_IRQHandler
+                0x08000d1c                TIM1_BRK_TIM9_IRQHandler
+                0x08000d1c                DCMI_IRQHandler
+                0x08000d1c                CAN2_RX0_IRQHandler
+                0x08000d1c                DMA2_Stream3_IRQHandler
+                0x08000d1c                USART6_IRQHandler
+                0x08000d1c                USART3_IRQHandler
+                0x08000d1c                CRYP_IRQHandler
+                0x08000d1c                CAN1_RX1_IRQHandler
+                0x08000d1c                UART5_IRQHandler
+                0x08000d1c                DMA2_Stream0_IRQHandler
+                0x08000d1c                TIM4_IRQHandler
+                0x08000d1c                I2C1_EV_IRQHandler
+                0x08000d1c                DMA1_Stream6_IRQHandler
+                0x08000d1c                DMA1_Stream1_IRQHandler
+                0x08000d1c                UART4_IRQHandler
+                0x08000d1c                LCD_TFT_1_IRQHandler
+                0x08000d1c                TIM3_IRQHandler
+                0x08000d1c                RCC_IRQHandler
+                0x08000d1c                TIM8_BRK_TIM12_IRQHandler
+                0x08000d1c                Default_Handler
+                0x08000d1c                EXTI15_10_IRQHandler
+                0x08000d1c                ADC_IRQHandler
+                0x08000d1c                DMA1_Stream7_IRQHandler
+                0x08000d1c                TIM7_IRQHandler
+                0x08000d1c                CAN2_TX_IRQHandler
+                0x08000d1c                TIM5_IRQHandler
+                0x08000d1c                DMA2_Stream7_IRQHandler
+                0x08000d1c                I2C3_EV_IRQHandler
+                0x08000d1c                EXTI9_5_IRQHandler
+                0x08000d1c                RTC_WKUP_IRQHandler
+                0x08000d1c                ETH_WKUP_IRQHandler
+                0x08000d1c                SPI2_IRQHandler
+                0x08000d1c                OTG_HS_EP1_IN_IRQHandler
+                0x08000d1c                MemManage_Handler
+                0x08000d1c                DMA1_Stream0_IRQHandler
+                0x08000d1c                CAN1_TX_IRQHandler
+                0x08000d1c                SVC_Handler
+                0x08000d1c                EXTI4_IRQHandler
+                0x08000d1c                FSMC_IRQHandler
+                0x08000d1c                ETH_IRQHandler
+                0x08000d1c                OTG_HS_EP1_OUT_IRQHandler
+                0x08000d1c                WWDG_IRQHandler
+                0x08000d1c                TIM2_IRQHandler
+                0x08000d1c                OTG_FS_WKUP_IRQHandler
+                0x08000d1c                TIM1_TRG_COM_TIM11_IRQHandler
+                0x08000d1c                OTG_HS_IRQHandler
+                0x08000d1c                EXTI1_IRQHandler
+                0x08000d1c                USART2_IRQHandler
+                0x08000d1c                I2C2_ER_IRQHandler
+                0x08000d1c                DMA2_Stream1_IRQHandler
+                0x08000d1c                CAN1_SCE_IRQHandler
+                0x08000d1c                DMA2_Stream4_IRQHandler
+                0x08000d1c                BusFault_Handler
+                0x08000d1c                USART1_IRQHandler
+                0x08000d1c                OTG_FS_IRQHandler
+                0x08000d1c                SPI3_IRQHandler
+                0x08000d1c                DMA1_Stream4_IRQHandler
+                0x08000d1c                I2C1_ER_IRQHandler
+                0x08000d1c                DMA2_Stream6_IRQHandler
+                0x08000d1c                DMA1_Stream3_IRQHandler
+ *fill*         0x08000d1e        0x2 
+ .text.exit     0x08000d20       0x28 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+                0x08000d20                exit
+ .text.__libc_init_array
+                0x08000d48       0x48 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+                0x08000d48                __libc_init_array
+ .text.memset   0x08000d90       0x10 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+                0x08000d90                memset
+ .text._exit    0x08000da0        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+                0x08000da0                _exit
+ *(.init)
+ .init          0x08000da4        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08000da4                _init
+ .init          0x08000da8        0x8 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ *(.fini)
+ .fini          0x08000db0        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x08000db0                _fini
+ .fini          0x08000db4        0x8 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ *(.rodata)
+ .rodata        0x08000dbc       0x24 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .rodata        0x08000de0       0x24 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ *(.rodata.*)
+ .rodata._global_impure_ptr
+                0x08000e04        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x08000e04                _global_impure_ptr
+                0x08000e08                . = ALIGN (0x4)
+                0x08000e08                _etext = .
+                0x08000e14                _sidata = LOADADDR (.data)
+
+.eh_frame       0x08000e08        0x4
+ .eh_frame      0x08000e08        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x08000e08        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+
+.ARM.extab      0x08000e0c        0x0
+ .ARM.extab     0x08000e0c        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+
+.ARM.exidx      0x08000e0c        0x8
+ .ARM.exidx     0x08000e0c        0x8 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+                                 0x10 (size before relaxing)
+
+.glue_7         0x08000e14        0x0
+ .glue_7        0x08000e14        0x0 linker stubs
+
+.glue_7t        0x08000e14        0x0
+ .glue_7t       0x08000e14        0x0 linker stubs
+
+.vfp11_veneer   0x08000e14        0x0
+ .vfp11_veneer  0x08000e14        0x0 linker stubs
+
+.v4_bx          0x08000e14        0x0
+ .v4_bx         0x08000e14        0x0 linker stubs
+
+.iplt           0x08000e14        0x0
+ .iplt          0x08000e14        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.rel.dyn        0x08000e14        0x0
+ .rel.iplt      0x08000e14        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.data           0x20000000       0x78 load address 0x08000e14
+                0x20000000                _sdata = .
+ *(.data)
+ .data          0x20000000        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+ .data          0x20000000        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x20000000                __dso_handle
+ .data          0x20000004        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .data          0x20000004        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .data          0x20000004        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+ .data          0x20000004       0x10 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+                0x20000004                Array_TC_OF_TS
+                0x2000000c                THONV_TS_STRUCT
+ .data          0x20000014        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .data          0x20000014        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .data          0x20000014        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .data          0x20000014        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .data          0x20000014        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ .data          0x20000014        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ *(.data.*)
+ .data._impure_ptr
+                0x20000014        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x20000014                _impure_ptr
+ .data.impure_data
+                0x20000018       0x60 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+                0x20000078                . = ALIGN (0x4)
+                0x20000078                _edata = .
+
+.init_array     0x20000078        0x4 load address 0x08000e8c
+ .init_array    0x20000078        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.fini_array     0x2000007c        0x4 load address 0x08000e90
+ .fini_array    0x2000007c        0x4 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.igot.plt       0x20000080        0x0 load address 0x08000e94
+ .igot.plt      0x20000080        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+
+.bss            0x20000080       0x3c load address 0x08000e94
+                0x20000080                _sbss = .
+                0x20000080                __bss_start__ = _sbss
+ *(.bss)
+ .bss           0x20000080        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+ .bss           0x20000080       0x1c c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .bss           0x2000009c        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .bss           0x2000009c        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .bss           0x2000009c        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+ .bss           0x2000009c        0xe E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+                0x2000009c                Id
+                0x200000a0                TestCaseResult
+ *fill*         0x200000aa        0x2 
+ .bss           0x200000ac       0x10 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+                0x200000ac                count
+                0x200000b0                GpioLed
+ .bss           0x200000bc        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .bss           0x200000bc        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .bss           0x200000bc        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .bss           0x200000bc        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ .bss           0x200000bc        0x0 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ *(.bss.*)
+ *(COMMON)
+                0x200000bc                . = ALIGN (0x4)
+                0x200000bc                _ebss = .
+                0x200000bc                __bss_end__ = _ebss
+                0x200000bc                . = ALIGN (0x4)
+                0x200000bc                end = .
+                0x200000bc                __end__ = .
+OUTPUT(E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x1e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+ .ARM.attributes
+                0x0000001e       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .ARM.attributes
+                0x0000004c       0x1c c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+ .ARM.attributes
+                0x00000068       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .ARM.attributes
+                0x00000096       0x21 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32_startup.o
+ .ARM.attributes
+                0x000000b7       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .ARM.attributes
+                0x000000e5       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .ARM.attributes
+                0x00000113       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .ARM.attributes
+                0x00000141       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .ARM.attributes
+                0x0000016f       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .ARM.attributes
+                0x0000019d       0x2e E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+ .ARM.attributes
+                0x000001cb       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x000001f9       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000227       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000255       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000283       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x000002b1       0x2e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ .ARM.attributes
+                0x000002df       0x1e c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+
+.comment        0x00000000       0x49
+ .comment       0x00000000       0x49 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+                                 0x4a (size before relaxing)
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .comment       0x00000049       0x4a E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+
+.debug_info     0x00000000      0xc29
+ .debug_info    0x00000000      0x7b9 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .debug_info    0x000007b9      0x19b E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .debug_info    0x00000954      0x249 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .debug_info    0x00000b9d       0x8c E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+
+.debug_abbrev   0x00000000      0x3b8
+ .debug_abbrev  0x00000000      0x170 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .debug_abbrev  0x00000170      0x117 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .debug_abbrev  0x00000287       0xed E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .debug_abbrev  0x00000374       0x44 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+
+.debug_aranges  0x00000000       0x80
+ .debug_aranges
+                0x00000000       0x20 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .debug_aranges
+                0x00000020       0x20 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .debug_aranges
+                0x00000040       0x20 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .debug_aranges
+                0x00000060       0x20 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+
+.debug_line     0x00000000      0x98b
+ .debug_line    0x00000000      0x5b9 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .debug_line    0x000005b9      0x19d E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .debug_line    0x00000756      0x1bc E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .debug_line    0x00000912       0x79 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .debug_line    0x0000098b        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+ .debug_line    0x0000098b        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+ .debug_line    0x0000098b        0x0 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+
+.debug_str      0x00000000      0x6ff
+ .debug_str     0x00000000      0x4a6 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+                                0x503 (size before relaxing)
+ .debug_str     0x000004a6       0xc8 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+                                0x1e0 (size before relaxing)
+ .debug_str     0x0000056e       0x64 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+                                0x269 (size before relaxing)
+ .debug_str     0x000005d2       0x50 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+                                0x167 (size before relaxing)
+ .debug_str     0x00000622       0x45 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test.o
+                                 0xc7 (size before relaxing)
+ .debug_str     0x00000667       0x4c E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS0_PB.o
+                                 0xce (size before relaxing)
+ .debug_str     0x000006b3       0x4c E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Test_VS1_PB.o
+                                 0xce (size before relaxing)
+
+.debug_frame    0x00000000      0x354
+ .debug_frame   0x00000000      0x1c8 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\stm32f407xx_gpio_driver.o
+ .debug_frame   0x000001c8       0x78 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TS_001.o
+ .debug_frame   0x00000240       0x54 E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_001.o
+ .debug_frame   0x00000294       0x2c E:\FW_HuLa\output\Gpio\Gpio_TS_001\gcc\compile\Gpio_TC_002.o
+ .debug_frame   0x000002c0       0x28 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x000002e8       0x2c c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00000314       0x20 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000334       0x20 c:/gcc_tho/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp\libnosys.a(_exit.o)
