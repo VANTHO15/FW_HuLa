@@ -72,6 +72,8 @@ class mRunTool():
             Run(mTest=self.Mytest).Run()
         elif self.Step == "clean":
             Clean(mTest=self.Mytest).Run()
+        else:
+            print("Check steps again, please !")
         
 
 if __name__ == '__main__':

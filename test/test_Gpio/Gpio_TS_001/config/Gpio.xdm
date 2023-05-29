@@ -30,7 +30,7 @@
                   <a:a name="VARIANTS" type="Variant">
                     <variant:pbvcond>
                       <variant:criterion 
-                                         value="ASPath:/EB/PostBuildSelectable/Criterions/my"/>
+                                         value="ASPath:/EB/PostBuildSelectable/Criterions/myTho"/>
                       <variant:cond>
                         <variant:tst expr="1"/>
                       </variant:cond>
@@ -42,7 +42,7 @@
                   <a:a name="VARIANTS" type="Variant">
                     <variant:pbvcond>
                       <variant:criterion 
-                                         value="ASPath:/EB/PostBuildSelectable/Criterions/my"/>
+                                         value="ASPath:/EB/PostBuildSelectable/Criterions/myTho"/>
                       <variant:cond>
                         <variant:tst expr="0"/>
                       </variant:cond>

@@ -23,7 +23,7 @@
               <SHORT-NAME>PostBuildCriterionValueSet_VS0</SHORT-NAME>
               <POST-BUILD-VARIANT-CRITERION-VALUES>
                 <POST-BUILD-VARIANT-CRITERION-VALUE>
-                  <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/EB/PostBuildSelectable/Criterions/my</VARIANT-CRITERION-REF>
+                  <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/EB/PostBuildSelectable/Criterions/myTho</VARIANT-CRITERION-REF>
                   <VALUE>0</VALUE>
                 </POST-BUILD-VARIANT-CRITERION-VALUE>
               </POST-BUILD-VARIANT-CRITERION-VALUES>
@@ -32,7 +32,7 @@
               <SHORT-NAME>PostBuildCriterionValueSet_VS1</SHORT-NAME>
               <POST-BUILD-VARIANT-CRITERION-VALUES>
                 <POST-BUILD-VARIANT-CRITERION-VALUE>
-                  <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/EB/PostBuildSelectable/Criterions/my</VARIANT-CRITERION-REF>
+                  <VARIANT-CRITERION-REF DEST="POST-BUILD-VARIANT-CRITERION">/EB/PostBuildSelectable/Criterions/myTho</VARIANT-CRITERION-REF>
                   <VALUE>1</VALUE>
                 </POST-BUILD-VARIANT-CRITERION-VALUE>
               </POST-BUILD-VARIANT-CRITERION-VALUES>
@@ -43,7 +43,7 @@
               <SHORT-NAME>Criterions</SHORT-NAME>
               <ELEMENTS>
                 <COMPU-METHOD>
-                  <SHORT-NAME>CompuMethod_my</SHORT-NAME>
+                  <SHORT-NAME>CompuMethod_myTho</SHORT-NAME>
                   <CATEGORY>TEXTTABLE</CATEGORY>
                   <COMPU-INTERNAL-TO-PHYS>
                     <COMPU-SCALES>
@@ -65,8 +65,8 @@
                   </COMPU-INTERNAL-TO-PHYS>
                 </COMPU-METHOD>
                 <POST-BUILD-VARIANT-CRITERION>
-                  <SHORT-NAME>my</SHORT-NAME>
-                  <COMPU-METHOD-REF DEST="COMPU-METHOD">/EB/PostBuildSelectable/Criterions/CompuMethod_my</COMPU-METHOD-REF>
+                  <SHORT-NAME>myTho</SHORT-NAME>
+                  <COMPU-METHOD-REF DEST="COMPU-METHOD">/EB/PostBuildSelectable/Criterions/CompuMethod_myTho</COMPU-METHOD-REF>
                 </POST-BUILD-VARIANT-CRITERION>
               </ELEMENTS>
             </AR-PACKAGE>
