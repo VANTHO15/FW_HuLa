@@ -7,24 +7,12 @@
 .global g_pfnVectors
 .global Default_Handler
 
-/* start address for the initialization values of the .data section.
-defined in linker script */
+/* Lấy vùng từ bên linker  */
 .word _sidata
-/* start address for the .data section. defined in linker script */
 .word _sdata
-/* end address for the .data section. defined in linker script */
 .word _edata
-/* start address for the .bss section. defined in linker script */
 .word _sbss
-/* end address for the .bss section. defined in linker script */
 .word _ebss
-
-/**
- * @brief  This is the code that gets called when the processor first
-*          starts execution following a reset event. Only the absolutely
-*          necessary set is performed, after which the application
-*          supplied main() routine is called.
-*/
 
   .section .text.Reset_Handler
   .weak Reset_Handler
@@ -72,25 +60,14 @@ LoopForever:
 
   .size Reset_Handler, .-Reset_Handler
 
-/**
- * @brief  This is the code that gets called when the processor receives an
- *         unexpected interrupt.  This simply enters an infinite loop, preserving
- *         the system state for examination by a debugger.
- *
-*/
   .section .text.Default_Handler,"ax",%progbits
 Default_Handler:
 Infinite_Loop:
   b Infinite_Loop
   .size Default_Handler, .-Default_Handler
 
-/******************************************************************************
-*
-* The STM32F407VGTx vector table.  Note that the proper constructs
-* must be placed on this to ensure that it ends up at physical address
-* 0x0000.0000.
-*
-******************************************************************************/
+
+
   .section .isr_vector,"a",%progbits
   .type g_pfnVectors, %object
   .size g_pfnVectors, .-g_pfnVectors
@@ -203,13 +180,6 @@ g_pfnVectors:
   .word	LCD_TFT_IRQHandler           			/* LTDC global interrupt                                              */
   .word	LCD_TFT_1_IRQHandler         			/* LTDC global error interrupt                                        */
 
-/*******************************************************************************
-*
-* Provide weak aliases for each Exception handler to the Default_Handler.
-* As they are weak aliases, any function with the same name will override
-* this definition.
-*
-*******************************************************************************/
 
 	.weak	NMI_Handler
 	.thumb_set NMI_Handler,Default_Handler
@@ -489,4 +459,3 @@ g_pfnVectors:
 
 	.weak	SystemInit
 
-/************************ (C) COPYRIGHT STMicroelectonics *****END OF FILE****/
